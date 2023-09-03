@@ -67,13 +67,16 @@ struct ContentView: View {
                         .background(Color.red)
                         .padding()
                         .frame(width: 200, height: 200)
-                    
                 }
-                VStack {
+                ZStack {
                     ForEach (movies, id: \.titleID){ movie in
                         CardView(movie: movie)
                     }
+                    .frame(height: 420)
+                    .background(Color.red)
+                    .padding()
                 }
+                Spacer()
             }
         }
     }
