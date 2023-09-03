@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F2038132AA5472A008308DC /* ViewFinderClient.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ViewFinderClient.entitlements; sourceTree = "<group>"; };
 		4FA0D2892AA4555D00665DDC /* ViewFinderClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewFinderClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FA0D28C2AA4555D00665DDC /* ViewFinderClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFinderClientApp.swift; sourceTree = "<group>"; };
 		4FA0D28E2AA4555D00665DDC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +97,7 @@
 		4FA0D28B2AA4555D00665DDC /* ViewFinderClient */ = {
 			isa = PBXGroup;
 			children = (
+				4F2038132AA5472A008308DC /* ViewFinderClient.entitlements */,
 				4FA0D28C2AA4555D00665DDC /* ViewFinderClientApp.swift */,
 				4FA0D28E2AA4555D00665DDC /* ContentView.swift */,
 				4FA0D2902AA4556000665DDC /* Assets.xcassets */,
@@ -418,6 +420,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ViewFinderClient/ViewFinderClient.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ViewFinderClient/Preview Content\"";
@@ -447,6 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ViewFinderClient/ViewFinderClient.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ViewFinderClient/Preview Content\"";
