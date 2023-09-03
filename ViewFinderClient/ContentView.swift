@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    private var userProfileURL : String = "https://people.com/thmb/CBFic124GCK-2LOZ0SVhGExksGQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(216x0:218x2)/pierce-brosnan-2-1-9fb80c3d3a0d49f48304b042b3a7c402.jpg"
+    private var viewFinderLogo : String = "https://e7.pngegg.com/pngimages/868/941/png-clipart-binoculars-graphy-computer-icons-binocular-logo-monochrome.png"
     private var movies : Array<(userID: String, titleID: String, title: String, rating: Double, recommendations: Int, watched: Bool, rejected: Bool, imageURL: String)> = [
         (userID: "test@gmail.com",
          titleID: "tt6334354",
@@ -53,16 +55,22 @@ struct ContentView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 HStack {
-                    Text("ViewFinder Logo")
-                        .font(.system(size:32, weight: .medium, design: .default)
-                        )
+                    AsyncImage(url: URL(string: "\(viewFinderLogo)")) { image in
+                        image.resizable()
+                            .aspectRatio(contentMode: .fit)
+                    } placeholder: {
+                        ProgressView()
+                    }
                         .foregroundColor(.white)
                         .background(Color.red)
                         .padding()
                         .frame(width: 200, height: 200)
-                    Text ("Profile picture")
-                        .font(.system(size:32, weight: .medium, design: .default)
-                        )
+                    AsyncImage(url: URL(string: "\(userProfileURL)")) { image in
+                        image.resizable()
+                            .aspectRatio(contentMode: .fit)
+                    } placeholder: {
+                        ProgressView()
+                    }
                         .foregroundColor(.white)
                         .background(Color.red)
                         .padding()

@@ -26,7 +26,7 @@ struct CardView: View {
                     .foregroundColor(.white)
                     .bold()
                 HStack {
-                    Text("\(round(movie.rating * 10) / 10.0)")
+                    Text("\(round(movie.rating * 10) / 10.0)") //doesn't round correctly
                         .foregroundColor(.white)
                 }
                 AsyncImage(url: URL(string: movie.imageURL),content: { image in
@@ -38,7 +38,7 @@ struct CardView: View {
                     ProgressView()
                 })
             }
-        } //end of
+        }
         .offset(x: offset.width, y: offset.height * 0.4)
         .rotationEffect(.degrees(Double(offset.width / 40)))
         .gesture(
