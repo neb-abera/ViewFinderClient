@@ -38,7 +38,7 @@ struct CardView: View {
                     ProgressView()
                 })
             }
-        }
+        } //end of
         .offset(x: offset.width, y: offset.height * 0.4)
         .rotationEffect(.degrees(Double(offset.width / 40)))
         .gesture(
@@ -47,14 +47,15 @@ struct CardView: View {
                     offset = gesture.translation
                     withAnimation{
                         changeColor(width: offset.width)
-                    } .onEnded { _ in
+                    }
+                } .onEnded { _ in
                         withAnimation{
                             swipeCard(width: offset.width)
                             changeColor(width: offset.width)
                         }
                     }
-                } //end of onchanged
-        ) //end of gesture
+                
+        )
     }
     
     func swipeCard(width: CGFloat) {
