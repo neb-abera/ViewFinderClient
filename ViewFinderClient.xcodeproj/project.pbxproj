@@ -14,6 +14,7 @@
 		4FA0D29E2AA4556000665DDC /* ViewFinderClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0D29D2AA4556000665DDC /* ViewFinderClientTests.swift */; };
 		4FA0D2A82AA4556000665DDC /* ViewFinderClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0D2A72AA4556000665DDC /* ViewFinderClientUITests.swift */; };
 		4FA0D2AA2AA4556000665DDC /* ViewFinderClientUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0D2A92AA4556000665DDC /* ViewFinderClientUITestsLaunchTests.swift */; };
+		4FA0D2B72AA46C2800665DDC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0D2B62AA46C2800665DDC /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		4FA0D2A32AA4556000665DDC /* ViewFinderClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewFinderClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FA0D2A72AA4556000665DDC /* ViewFinderClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFinderClientUITests.swift; sourceTree = "<group>"; };
 		4FA0D2A92AA4556000665DDC /* ViewFinderClientUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFinderClientUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4FA0D2B62AA46C2800665DDC /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				4FA0D28E2AA4555D00665DDC /* ContentView.swift */,
 				4FA0D2902AA4556000665DDC /* Assets.xcassets */,
 				4FA0D2922AA4556000665DDC /* Preview Content */,
+				4FA0D2B62AA46C2800665DDC /* CardView.swift */,
 			);
 			path = ViewFinderClient;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FA0D28F2AA4555D00665DDC /* ContentView.swift in Sources */,
+				4FA0D2B72AA46C2800665DDC /* CardView.swift in Sources */,
 				4FA0D28D2AA4555D00665DDC /* ViewFinderClientApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
