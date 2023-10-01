@@ -15,8 +15,8 @@ struct CardView: View {
     var body: some View {
         ZStack {
             Rectangle()
-                .frame(width: 320, height: 420)
-                .border(.white, width:6.0)
+                .frame(width: nil, height: nil)
+//                .border(.white, width:6.0)
                 .cornerRadius(4)
                 .foregroundColor(color.opacity(0.9))
                 .shadow(radius: 4)
