@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CardView: View {
-    var movie: (userID: String, titleID: String, title: String, rating: Double, recommendations: Int, watched: Bool, rejected: Bool, imageURL: String)
+    var movie: ListElementModel
     @State private var offset = CGSize.zero
     @State private var color: Color = .black
     
@@ -84,8 +84,9 @@ struct CardView: View {
     
     
 struct CardView_Previews: PreviewProvider {
+    static var movie = ListElementModelTest()
         static var previews: some View {
-            CardView(movie: (userID: "test@gmail.com", titleID: "tt0910970", title: "Wall E", rating: 8.4, recommendations: 0, watched: false, rejected: false, imageURL: "https://m.media-amazon.com/images/I/51RoZRgIHtL._AC_UF894,1000_QL80_.jpg"))
+            CardView(movie: movie.movies)
         }
 }
 

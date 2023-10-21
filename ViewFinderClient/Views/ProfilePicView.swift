@@ -20,7 +20,7 @@ struct ProfilePicView : View {
             .foregroundColor(.white)
             .background(Color.red)
             .padding()
-            .frame(width: 200, height: 200)
+            .frame(width: .infinity, height: 160)
     }
 }
 

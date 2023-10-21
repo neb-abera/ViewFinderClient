@@ -14,24 +14,14 @@ struct MainListBodyView : View {
     var body: some View {
         VStack {
             //            UpperNavView()
-            HStack {
+//            HStack {
                 LogoView()
-                ProfilePicView()
-            }
-            VStack {
-                ForEach(movies.movies){ item in
-                    MainListBodyElementView(movies: item)
-                }
-            }
-//            ZStack {
-//                ForEach (movies, id: \.titleID){ movie in
-//                    CardView(movie: movie)
-//                }
-//                .frame(height: 420)
-//                .background(Color.red)
-//                .padding()
+//                ProfilePicView()
 //            }
-            Spacer()
+            List(movies.movies) { item in
+                MainListBodyElementView(movies: item)
+            }
+
         }
     }
 }

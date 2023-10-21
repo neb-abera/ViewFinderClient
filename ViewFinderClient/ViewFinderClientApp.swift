@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct ViewFinderClientApp: App {
+    @StateObject var movies = ListElementViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(movies : movies)
         }
     }
 }

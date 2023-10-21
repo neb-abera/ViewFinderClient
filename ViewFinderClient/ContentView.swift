@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var movies = ListElementViewModel()
+//    @StateObject var movies = ListElementViewModel()
+    @ObservedObject var movies : ListElementViewModel
     var body: some View {
         TabView {
             MainListView(movies : movies)
@@ -16,15 +17,25 @@ struct ContentView: View {
                     Image(systemName: "folder.fill")
                     Text("Main")
                 }
-            Text("Favourites Screen")
+            Text("Watched")
                 .tabItem {
                     Image(systemName: "heart.fill")
-                    Text("Main")
+                    Text("Watched")
+                }
+            Text("Profile")
+                .tabItem {
+                    Image(systemName: "person.fill")
+                    Text("Profile")
                 }
             Text("Friends")
                 .tabItem {
                     Image(systemName: "person.fill")
                     Text("Friends")
+                }
+            Text("Settings")
+                .tabItem {
+                    Image(systemName: "person.fill")
+                    Text("Settings")
                 }
             }
         }
@@ -32,7 +43,8 @@ struct ContentView: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
+    static var movies = ListElementModelListTest()
     static var previews: some View {
-        ContentView()
+        ContentView(movies : movies.movies)
     }
 }
